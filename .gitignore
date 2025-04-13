@@ -1,3 +1,53 @@
+######################
+# OS generated files 
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Created by https://www.toptal.com/developers/gitignore/api/osx
+# Edit at https://www.toptal.com/developers/gitignore?templates=osx
+
+######################
+# OSX
+######################
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# End of https://www.toptal.com/developers/gitignore/api/osx
+
+######################
+# R generated files
+######################
+
 # History files
 .Rhistory
 .Rapp.history
@@ -20,6 +70,7 @@
 
 # RStudio files
 .Rproj.user/
+.Rproj.user
 
 # produced vignettes
 vignettes/*.html
@@ -30,6 +81,7 @@ vignettes/*.pdf
 
 # knitr and R markdown default cache directories
 *_cache/
+/*_cache/
 /cache/
 
 # Temporary files created by R markdown
@@ -46,4 +98,6 @@ docs/
 po/*~
 
 # RStudio Connect folder
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+rsconnect
