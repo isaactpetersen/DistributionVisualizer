@@ -19,25 +19,31 @@ ui <- fluidPage(
       numericInput(
         "mean",
         "Mean:",
-        value = 100),
+        value = 100,
+        width = "100px"),
       
       numericInput(
         "sd",
         "Standard Deviation:",
         value = 15,
-        min = 1),
+        min = 1,
+        width = "80px"),
       
       numericInput(
         "skew",
         "Skewness (approx.):",
         value = 0,
-        step = 0.1),
+        step = 0.1,
+        width = "80px"),
       
       numericInput(
         "kurt",
         "Kurtosis (approx.):",
         value = 3,
-        step = 0.1)
+        step = 0.1,
+        width = "80px"),
+      
+      width = 2
     ),
     mainPanel(
       plotOutput("distPlot"),
