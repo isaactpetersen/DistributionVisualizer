@@ -37,9 +37,9 @@ ui <- fluidPage(
         width = "80px"),
       
       numericInput(
-        "kurt",
+        "kurt", # excess kurtosis
         "Kurtosis (approx.):",
-        value = 3,
+        value = 0,
         step = 0.1,
         width = "80px"),
       
@@ -54,6 +54,8 @@ ui <- fluidPage(
 
 # Define server logic
 server <- function(input, output, session) {
+  
+  rawKurtosis <- input$kurt + 3 # rawKurtosis = excessKurtosis + 3
   
   output$distPlot <- renderPlot({
     moments <- c(
