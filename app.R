@@ -55,14 +55,14 @@ ui <- fluidPage(
 # Define server logic
 server <- function(input, output, session) {
   
-  rawKurtosis <- input$kurt + 3 # rawKurtosis = excessKurtosis + 3
-  
   output$distPlot <- renderPlot({
+    rawKurtosis <- input$kurt + 3 # rawKurtosis = excessKurtosis + 3
+    
     moments <- c(
       mean = input$mean,
       variance = input$sd^2,
       skewness = input$skew,
-      kurtosis = input$kurt)
+      kurtosis = rawKurtosis)
     
     # Try to simulate data; catch errors if moments are invalid
     x <- tryCatch({
